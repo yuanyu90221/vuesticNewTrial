@@ -1,6 +1,7 @@
-import express from 'express'
-import bodyParser from 'body-parser'
+const express = require('express')
+const bodyParser = require('body-parser')
 // import api from './api'
+const kycUsers = require('./api/kyc-users')
 const app = express()
 const host = process.env.HOST || '127.0.0.1'
 const port = process.env.PORT || 3300
@@ -15,8 +16,10 @@ app.use(session({
 }))
 
 app.set('port', port)
+app.use('/api', kycUsers)
 // add api
 // app.use('/', api)
 app.use('/', express.static('./dist/'))
+
 app.listen(port, host)
 console.log('Server listening on ' + host + ':' + port)

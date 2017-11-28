@@ -2,7 +2,7 @@
   <aside class="sidebar">
     <vuestic-scrollbar>
       <ul class="sidebar-menu">
-        <li v-for="(item, index) in menuItems">
+        <li :key="index" v-for="(item, index) in menuItems">
           <router-link :to="item.path"
                        class="sidebar-link"
                        @click="toggleMenuItem(item)"

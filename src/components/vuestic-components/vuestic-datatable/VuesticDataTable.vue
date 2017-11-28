@@ -90,7 +90,7 @@
     data () {
       return {
         tableData: LocalData,
-        perPage: 6,
+        perPage: 10,
         colorClasses: {},
         moreParams: {},
         dataCount: 0,

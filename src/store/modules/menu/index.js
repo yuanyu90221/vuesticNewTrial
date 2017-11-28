@@ -6,7 +6,7 @@ import ui from './ui'
 // import maps from './maps'
 import tables from './tables'
 import auth from './auth'
-import extra from './extra'
+// import extra from './extra'
 import setupProfile from './setupProfile'
 // import root from './root'
 const state = {
@@ -16,7 +16,7 @@ const state = {
     forms,
     tables,
     ui,
-    extra,
+    // extra,
     auth,
     // maps,
     setupProfile

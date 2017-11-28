@@ -179,7 +179,7 @@
 
     <div class="row">
       <div class="col-md-12">
-        <widget headerText="KYC Users test">
+        <widget headerText="KYC Users">
           <data-table :apiUrl="apiUrl"
                       :tableFields="tableFields"
                       :itemsPerPage="itemsPerPage"
