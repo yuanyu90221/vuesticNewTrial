@@ -63,10 +63,10 @@
         <div class="dropdown-menu last">
           <div class="dropdown-menu-content">
             <div class="dropdown-item plain-link-item">
-              <a class="plain-link" href="#">My Profile</a>
+              <a class="plain-link" href="#/dashboard/setup-profile-tab/setupProfile">My Profile</a>
             </div>
             <div class="dropdown-item plain-link-item">
-              <a class="plain-link" href="#">Logout</a>
+              <a class="plain-link" href="#/auth/login">Logout</a>
             </div>
           </div>
         </div>

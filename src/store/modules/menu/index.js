@@ -7,7 +7,8 @@ import maps from './maps'
 import tables from './tables'
 import auth from './auth'
 import extra from './extra'
-
+import setupProfile from './setupProfile'
+// import root from './root'
 const state = {
   items: [
     dashboard,
@@ -17,7 +18,8 @@ const state = {
     ui,
     extra,
     auth,
-    maps
+    maps,
+    setupProfile
   ]
 }
 
