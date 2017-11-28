@@ -3,7 +3,7 @@ import statistics from './statistics'
 import forms from './forms'
 import dashboard from './dashboard'
 import ui from './ui'
-import maps from './maps'
+// import maps from './maps'
 import tables from './tables'
 import auth from './auth'
 import extra from './extra'
@@ -18,7 +18,7 @@ const state = {
     ui,
     extra,
     auth,
-    maps,
+    // maps,
     setupProfile
   ]
 }

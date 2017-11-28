@@ -5,7 +5,7 @@
       wizard-layout="vertical"
       :wizard-type="wizardType">
       <div slot="page1" class="form-wizard-tab-content">
-        <h4>Type your name</h4>
+        <h4>輸入姓名</h4>
         <p>Zebras communicate with facial expressions and sounds. They make loud braying or barking sounds and
           soft snorting sounds. The position of their ears, how wide open their eyes are, and whether they show
           their teeth all send a signal. For example, ears flat back means trouble, or "you better follow orders!"</p>
@@ -25,12 +25,12 @@
         </div>
       </div>
       <div slot="page2" class="form-wizard-tab-content">
-        <h4>Select your country</h4>
+        <h4>選擇你的國籍</h4>
         <p>Zebras communicate with facial expressions and sounds. They make loud braying or barking sounds and
           soft snorting sounds. The position of their ears, how wide open their eyes are, and whether they show
           their teeth all send a signal. For example, ears flat back means trouble, or "you better follow orders!"</p>
         <vuestic-simple-select
-          label="Select country"
+          label="選擇你的國籍"
           v-model="selectedCountry"
           name="country"
           :required="true"
@@ -39,7 +39,7 @@
         </vuestic-simple-select>
       </div>
       <div slot="page3" class="form-wizard-tab-content">
-        <h4>Confirm selection</h4>
+        <h4>確認選擇</h4>
         <p>
           Zebras communicate with facial expressions and sounds. They make loud braying or barking sounds and
           soft snorting sounds. The position of their ears, how wide open their eyes are, and whether they show
@@ -47,7 +47,7 @@
         </p>
       </div>
       <div slot="wizardCompleted" class="form-wizard-tab-content wizard-completed-tab">
-        <h4>Wizard completed!</h4>
+        <h4>設定個人資料完成</h4>
         <p>
           Zebras communicate with facial expressions and sounds. They make loud braying or barking sounds and
           soft snorting sounds. The position of their ears, how wide open their eyes are, and whether they show
@@ -78,7 +78,7 @@
       return {
         steps: [
           {
-            label: 'Step 1. Name',
+            label: '步驟 1 姓名資料',
             slot: 'page1',
             onNext: () => {
               this.validateFormField('name')
@@ -88,7 +88,7 @@
             }
           },
           {
-            label: 'Step 2. Country',
+            label: '步驟 2. 國籍資料',
             slot: 'page2',
             onNext: () => {
               this.$refs.selectedCountrySelect.validate()
@@ -98,7 +98,7 @@
             }
           },
           {
-            label: 'Step 3. Confirm',
+            label: 'Step 3. 確認設定',
             slot: 'page3'
           }
         ],
